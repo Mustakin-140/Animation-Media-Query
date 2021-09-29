@@ -1,5 +1,78 @@
-*{
-	margin:0; 
-	padding:0;
-	box-sizing: border-box;
+#parent{
+	height: 100px;
+	width:  100px;
+	background: red;
+	animation-name: change_bg;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+
+}
+
+/*@keyframes change_bg {
+	from { 
+		background: green;
+		transform: rotate(150deg);
+	}
+	to {
+		background: yellow;
+		transform: rotate(250deg);
+	}
+}*/
+
+@keyframes change_bg{
+	0%{
+		transform: rotate(100deg);
+		background: teal;
+	}
+	10%{
+		transform: rotate(120deg);
+	}
+	40%{
+		transform: rotate(250deg);
+		background: purple;
+	}
+	50%{
+		transform: rotate(100deg);
+		background: tomato;
+	}
+	80%{
+		transform: rotate(200deg);
+	}
+	100%{
+		transform: rotate(200deg);
+		background: red;
+	}
+}
+
+
+img{
+	width: 200px;
+	height: 200px;
+	animation-name: random ;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes random{
+	0%{
+		transform: scale(0.5);
+	}
+	25%{
+		transform: scale(1);
+	}
+	55%{
+		transform: scale(1.2);
+	}
+
+	75%{
+		transform: scale(0.5);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+
+h1{
+	font-size: 150px;
 }
